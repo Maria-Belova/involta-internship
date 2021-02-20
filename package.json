@@ -1,0 +1,22 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "Test assignment for internship",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maria-Belova/involta-internship.git"
+  },
+  "author": "Maria Belova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maria-Belova/involta-internship/issues"
+  },
+  "homepage": "https://github.com/Maria-Belova/involta-internship#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
