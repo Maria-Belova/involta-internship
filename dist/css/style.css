@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NotoSerif-Regular";
+  font-display: swap;
+  src: url("../fonts/NotoSerif-Regular.woff") format("woff"), url("../fonts/NotoSerif-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Philosopher-Regular";
+  font-display: swap;
+  src: url("../fonts/Philosopher-Regular.woff") format("woff"), url("../fonts/Philosopher-Regular.woff2") format("woff2");
+}
+
+body {
+  background-color: #66318a;
+  font-size: 34px;
+  color: #fffc42;
+}
