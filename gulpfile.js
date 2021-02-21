@@ -66,6 +66,7 @@ function css() {
     .pipe(
       scss({
         outputStyle: "expanded",
+        includePaths: require("node-normalize-scss").includePaths,
       })
     )
     .pipe(
@@ -121,37 +122,41 @@ function images() {
 }
 
 function fonts() {
-  src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts));
-  return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts));
+  src(path.src.fonts)
+  .pipe(ttf2woff())
+  .pipe(dest(path.build.fonts));
+  return src(path.src.fonts)
+  .pipe(ttf2woff2())
+  .pipe(dest(path.build.fonts));
 }
 
-function fontsStyle() {
-  let file_content = fs.readFileSync(source_folder + "/scss/fonts.scss");
-  if (file_content == "") {
-    fs.writeFile(source_folder + "/scss/fonts.scss", "", cb);
-    return fs.readdir(path.build.fonts, function (err, items) {
-      if (items) {
-        let c_fontname;
-        for (var i = 0; i < items.length; i++) {
-          let fontname = items[i].split(".");
-          fontname = fontname[0];
-          if (c_fontname != fontname) {
-            fs.appendFile(
-              source_folder + "/scss/fonts.scss",
-              '@include font("' +
-                fontname +
-                '", "' +
-                fontname +
-                '", "400", "normal");\r\n',
-              cb
-            );
-          }
-          c_fontname = fontname;
-        }
-      }
-    });
-  }
-}
+// function fontsStyle() {
+//   let file_content = fs.readFileSync(source_folder + "/scss/fonts.scss");
+//   if (file_content == "") {
+//     fs.writeFile(source_folder + "/scss/fonts.scss", "", cb);
+//     return fs.readdir(path.build.fonts, function (err, items) {
+//       if (items) {
+//         let c_fontname;
+//         for (var i = 0; i < items.length; i++) {
+//           let fontname = items[i].split(".");
+//           fontname = fontname[0];
+//           if (c_fontname != fontname) {
+//             fs.appendFile(
+//               source_folder + "/scss/fonts.scss",
+//               '@include font("' +
+//                 fontname +
+//                 '", "' +
+//                 fontname +
+//                 '", "400", "normal");\r\n',
+//               cb
+//             );
+//           }
+//           c_fontname = fontname;
+//         }
+//       }
+//     });
+//   }
+// }
 
 function cb() {}
 
@@ -166,11 +171,11 @@ function clean() {
   return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 
-exports.fontsStyle = fontsStyle;
+// exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;

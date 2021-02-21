@@ -4,7 +4,9 @@
   "description": "Test assignment for internship",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
+    "node-normalize-scss": "^8.1.2",
     "webp-converter": "^2.2.3"
   }
 }
