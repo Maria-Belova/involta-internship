@@ -75,7 +75,6 @@
   .img-wrapper {
     transform: scale(1.1) rotate(4deg);
     transition: 0.7s;
-    margin-bottom: 5px;
   }
 }
 .news-card__title {
@@ -119,13 +118,6 @@
 }
 
 @media (max-width: 1400px) {
-  .news-card {
-    margin-left: 15px;
-    margin-bottom: 50px;
-    max-width: auto;
-    display: flex;
-    flex-direction: column;
-  }
   .card-1,
   .card-4,
   .card-7 {
@@ -138,7 +130,6 @@
   }
 }
 @media (max-width: 991px) {
-  transition: 0.7s;
   .content-1 {
     display: none;
   }
