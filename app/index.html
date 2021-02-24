@@ -1,16 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <title>Gulp</title>
-</head>
-<body>
-  @@include("_header.html")
-  <div>Hello</div>
-  <img src="img/avatar.jpg" alt="">
-  <script src="js/script.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Gulp</title>
+  </head>
+  <body>
+    <div class="container content-1">
+      <div class="line"></div>
+      <div class="row d-flex flex-wrap">
+        <div class="news-card card-1 col">
+          <div class="img-wrapper">
+            <img src="./img/111-murray-hero-crown_1_3.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-1 -->
+        <div class="news-card card-2 col">
+          <div class="img-wrapper">
+            <img src="./img/18138-purpur-zdanie-stolica-gorodskoj_pejzazh-metropoliya-2048x1152.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Конституционное право</div>
+            </div>
+            <div class="news-card__title">Адвокатов наказали <br> за конфликт в сети</div>
+              <div class="news-card__description">Одним из новых заместителей Александра Коновалова стал Денис Новак, до последнего времени занимавший должность заместителя директора Департамента экономического законодательства Минюста</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-2 -->
+        <div class="news-card card-3 col">
+          <div class="img-wrapper">
+            <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Этика общения адвокатов</div>
+            </div>
+            <div class="news-card__title">Диалог адвокатуры <br> и следствия</div>
+            <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-3 -->
+        <div class="news-card card-4 col">
+          <div class="img-wrapper">
+            <img src="./img/shankhai-kitai-ulitsy-dorogi-doma-neboskreby-most-noch-ogni.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-4 -->
+        <div class="news-card card-5 col">
+          <div class="img-wrapper">
+            <img src="./img/Money.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-5 -->
+        <div class="news-card card-6 col">
+          <div class="img-wrapper">
+            <img src="./img/111-murray-hero-crown_1_3.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-6 -->
+        <div class="news-card card-7 col">
+          <div class="img-wrapper">
+            <img src="./img/18138-purpur-zdanie-stolica-gorodskoj_pejzazh-metropoliya-2048x1152.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Конституционное право</div>
+            </div>
+            <div class="news-card__title">Адвокатов наказали <br> за конфликт в сети</div>
+            <div class="news-card__description">Одним из новых заместителей Александра Коновалова стал Денис Новак, до последнего времени занимавший должность заместителя директора Департамента экономического законодательства Минюста</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-7 -->
+        <div class="news-card card-8 col">
+          <div class="img-wrapper">
+            <img src="./img/shankhai-kitai-ulitsy-dorogi-doma-neboskreby-most-noch-ogni.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-8 -->
+        <div class="news-card card-9 col">
+          <div class="img-wrapper">
+            <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Этика общения адвокатов</div>
+            </div>
+            <div class="news-card__title">Диалог адвокатуры <br> и следствия</div>
+            <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-9 -->
+        <div class="news-card card-10 col">
+          <div class="img-wrapper">
+            <img src="./img/111-murray-hero-crown_1_3.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-10 -->
+        <div class="news-card card-11 col">
+          <div class="img-wrapper">
+            <img src="./img/Money.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Закон и порядок</div>
+            </div>
+            <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+            <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-11 -->
+        <div class="news-card card-12 col">
+          <div class="img-wrapper">
+            <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+          </div>
+          <div class="news-card__info">
+            <div class="news-card__category d-flex">
+              <div class="icon"></div>
+              <div class="name">Этика общения адвокатов</div>
+            </div>
+            <div class="news-card__title">Диалог адвокатуры <br> и следствия</div>
+            <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+            <div class="news-card__date">26 августа</div>
+          </div>
+        </div>
+        <!-- /.news-card card-12 -->
+      </div>
+      <!-- /.row d-flex flex-wrap -->
+    </div>
+      <!-- /.container content-1 -->
+    <div class="container content-2">
+      <div class="line"></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/111-murray-hero-crown_1_3.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/18138-purpur-zdanie-stolica-gorodskoj_pejzazh-metropoliya-2048x1152.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Конституционное право</div>
+              </div>
+              <div class="news-card__title">Адвокатов наказали <br> за конфликт в сети</div>
+              <div class="news-card__description">Одним из новых заместителей Александра Коновалова стал Денис Новак, до последнего времени занимавший должность заместителя директора Департамента экономического законодательства Минюста</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Этика общения адвокатов</div>
+              </div>
+              <div class="news-card__title">Диалог адвокатуры <br> и следствия</div>
+              <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/shankhai-kitai-ulitsy-dorogi-doma-neboskreby-most-noch-ogni.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/Money.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/18138-purpur-zdanie-stolica-gorodskoj_pejzazh-metropoliya-2048x1152.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Конституционное право</div>
+              </div>
+              <div class="news-card__title">Адвокатов наказали <br> за конфликт в сети</div>
+              <div class="news-card__description">Одним из новых заместителей Александра Коновалова стал Денис Новак, до последнего времени занимавший должность заместителя директора Департамента экономического законодательства Минюста</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Этика общения адвокатов</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/shankhai-kitai-ulitsy-dorogi-doma-neboskreby-most-noch-ogni.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/111-murray-hero-crown_1_3.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/18138-purpur-zdanie-stolica-gorodskoj_pejzazh-metropoliya-2048x1152.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Конституционное право</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/Money.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Закон и порядок</div>
+              </div>
+              <div class="news-card__title">Упущены значимые <br> правовые категории</div>
+              <div class="news-card__description">Федеральная палата адвокатов оперативно подготовила предложения по изменению УПК РФ во исполнение требований Президетна изменить порядок заключения и содержания под стражей предпринимателей</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+          <div class="swiper-slide">
+            <div class="img-wrapper">
+              <img src="./img/new-york-nyu-york-ssha-zakat-5262.png" class="img" alt="">
+            </div>
+            <div class="news-card__info">
+              <div class="news-card__category d-flex">
+                <div class="icon"></div>
+                <div class="name">Этика общения адвокатов</div>
+              </div>
+              <div class="news-card__title">Диалог адвокатуры <br> и следствия</div>
+              <div class="news-card__description">Главное управление МВД столицы обратилось в АП г. Москвы с просьбой организовать явку представителей палаты для проведения обыска в жилище адвоката</div>
+              <div class="news-card__date">26 августа</div>
+            </div>
+          </div>
+          <!-- /.news-card swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+      </div>
+      <!-- /.swiper-container -->
+    </div>
+    <!-- /.container content-2 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="js/script.min.js"></script>
+  </body>
 </html>
