@@ -13,6 +13,9 @@
 @import "normalize";
 @import "vars";
 
+.row {
+  justify-content: space-between;
+}
 .line {
   border: none;
   height: 2px;
@@ -21,15 +24,27 @@
   margin-top: 25px;
   margin-bottom: 50px;
 }
-.news-card__category {
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  .name {
-    margin-left: 10px;
-    font-size: 15px;
-    color: $red;
-    font-family: "Philosopher-Bold";
+.news-card {
+  margin-left: 33px;
+  margin-bottom: 50px;
+  min-width: 282px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.news-card:hover {
+  .icon {
+    background-color: $red;
+    -webkit-mask: url(../img/icon.svg) no-repeat center;
+    mask: url(../img/icon.svg) no-repeat center;
+    width: 12.97px;
+    height: 15.906px;
+  }
+  margin-top: -20px;
+  transition: 0.7s;
+  .img-wrapper {
+    transform: scale(1.1) rotate(4deg);
+    transition: 0.7s;
   }
 }
 .icon {
@@ -46,35 +61,15 @@
     height: 100%;
   }
 }
-.news-card {
-  margin-left: 33px;
-  margin-bottom: 50px;
-  min-width: 282px;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-.card-1,
-.card-5,
-.card-9 {
-  margin-left: 0;
-}
-.row {
-  justify-content: space-between;
-}
-.news-card:hover {
-  .icon {
-    background-color: $red;
-    -webkit-mask: url(../img/icon.svg) no-repeat center;
-    mask: url(../img/icon.svg) no-repeat center;
-    width: 12.97px;
-    height: 15.906px;
-  }
-  margin-top: -20px;
-  transition: 0.7s;
-  .img-wrapper {
-    transform: scale(1.1) rotate(4deg);
-    transition: 0.7s;
+.news-card__category {
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  .name {
+    margin-left: 10px;
+    font-size: 15px;
+    color: $red;
+    font-family: "Philosopher-Bold";
   }
 }
 .news-card__title {
@@ -93,6 +88,11 @@
   margin-top: 10px;
   font-family: "NotoSans-Regular";
   font-size: 11px;
+}
+.card-1,
+.card-5,
+.card-9 {
+  margin-left: 0;
 }
 .content-2 {
   display: none;
@@ -122,6 +122,10 @@
   .card-4,
   .card-7 {
     margin-left: 0;
+  }
+  .card-5,
+  .card-9 {
+    margin-left: 33px;
   }
   .card-10,
   .card-11,
