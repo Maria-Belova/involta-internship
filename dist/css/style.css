@@ -391,9 +391,18 @@ template {
   cursor: pointer;
 }
 
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: 1s;
+  display: block;
+}
+
 .news-card:hover {
   margin-top: -20px;
-  transition: 0.7s;
 }
 
 .news-card:hover .icon {
@@ -404,7 +413,7 @@ template {
   height: 15.906px;
 }
 
-.news-card:hover .img-wrapper {
+.news-card:hover .img {
   transform: scale(1.1) rotate(4deg);
   transition: 0.7s;
 }
